@@ -10,7 +10,6 @@ describe('Frontend App', () => {
   });
 
   describe('Data validation', () => {
-    // Still testing trivial things
     it('should handle basic arithmetic', () => {
       const result = 1 + 1;
       expect(result).toBe(2);
@@ -50,7 +49,6 @@ describe('Frontend App', () => {
 
   describe('Fetch API calls', () => {
     beforeEach(() => {
-      // Mock fetch - still bad setup
       global.fetch = vi.fn();
     });
 

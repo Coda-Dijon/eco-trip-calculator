@@ -40,7 +40,6 @@ function calculate(): any {
         var resultLabel = document.getElementById('resultLabel');
         if (resultLabel) {
             resultLabel.innerHTML = data.data.label;
-            // Removing all classes and adding new one - inefficient
             resultLabel.className = 'result-label label-' + data.data.label;
         }
 

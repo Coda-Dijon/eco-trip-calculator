@@ -22,7 +22,6 @@ describe('Calculator Service', () => {
     it('should calculate CO2 for thermal car with 1 passenger', () => {
       const result = calculatorService.calculate(100, 'car', 'thermal', 1, 'France');
 
-      // Still using magic number in test - bad!
       expect(result.co2).toBe(19.2);
       expect(result.label).toBe('RED');
     });

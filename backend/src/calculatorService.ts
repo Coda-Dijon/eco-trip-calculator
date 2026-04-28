@@ -3,7 +3,6 @@ class CalculatorService {
     var result = 0;
     var lbl = '';
 
-    // Still nested if-else hell
     if (t === 'bike' || t === 'walk') {
       result = 0;
       lbl = 'GREEN';

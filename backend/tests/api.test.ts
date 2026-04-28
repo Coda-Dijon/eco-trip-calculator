@@ -1,4 +1,3 @@
-// API tests with better names but still some issues
 import { describe, it, expect, beforeEach } from 'vitest';
 // @ts-ignore
 import request from 'supertest';
@@ -77,8 +76,6 @@ describe('EcoTrip API', () => {
       expect(history[0].distance).toBe(50);
       expect(history[0].transport).toBe('train');
     });
-
-    // Still missing: validation tests, error handling tests
   });
 
   describe('POST /api/compare', () => {
