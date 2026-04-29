@@ -1,5 +1,8 @@
+import { Transport } from "./typeTransport";
+
+
 class CalculatorService {
-  calculate(distance: any, transport: any, carType: any, passengers: any, country: any): any {
+  calculate(distance: any, transport: Transport, carType: any, passengers: any, country: any): any {
     var result = 0;
     var lbl = '';
 

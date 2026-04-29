@@ -58,9 +58,22 @@ Nous avons renommé toutes les variables
 **Bénéfice :**
 Meilleure compréhension des variables
 
-### Règle #[N] — [nom de la règle]
+### Règle #[3] — [Encapsuler les primitives]
 
-[idem]
+**Violation originale :** `[calculatorService.ts:2]`
+```
+calculate(d: any, t: any, ct: any, p: any, c: any): any {
+```
+On remplace le type any, 
+
+**Transformation :**
+```
+calculate(distance: any, transport: any, carType: any, passengers: any, country: any)
+```
+On remplace 'any' par un export de type (transport) où on lui donne/impose les choix possibles pour les transports (exemple : car, train ou bus)
+
+**Bénéfice :**
+Meilleure compréhension des variables
 
 ---
 
