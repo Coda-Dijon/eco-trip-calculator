@@ -41,16 +41,22 @@
 
 ## Object Calisthenics appliquées
 
-### Règle #[N] — [nom de la règle]
+### Règle #[6] — [Ne pas abréger]
 
-**Violation originale :** `[fichier:ligne]`
-[Extrait + explication de la violation]
+**Violation originale :** `[calculatorService.ts:2]`
+```
+calculate(d: any, t: any, ct: any, p: any, c: any): any {
+```
+Mauvaise nomenclature passée en paramètre de la méthode calculate qui peut amener à des confusions, mauvaises interprétations.
 
 **Transformation :**
-[Ce que vous avez fait]
+```
+calculate(distance: any, transport: any, carType: any, passengers: any, country: any)
+```
+Nous avons renommé toutes les variables 
 
 **Bénéfice :**
-[En une phrase]
+Meilleure compréhension des variables
 
 ### Règle #[N] — [nom de la règle]
 
