@@ -5,6 +5,7 @@ import bodyParser from 'body-parser';
 import calculatorService from './calculatorService.js';
 import compareService from './compareService.js';
 import historyService from './historyService.js';
+import {pathToFileURL} from "node:url";
 
 const app = express();
 app.use(cors());
@@ -72,7 +73,7 @@ app.get('/api/stats', (req: any, res: any) => {
 export { app, calculatorService, compareService, historyService };
 
 // ESM way to check if file is being run directly
-const isMainModule = import.meta.url === `file://${process.argv[1]}`;
+const isMainModule =  import.meta.url === pathToFileURL(process.argv[1]).href;
 
 if (isMainModule) {
   const PORT = process.env.PORT || 3000;
