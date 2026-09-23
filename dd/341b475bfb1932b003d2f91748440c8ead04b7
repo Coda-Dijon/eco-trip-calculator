@@ -1,0 +1,14 @@
+backend/src/server.ts
+  h_0a88d9aba8622a 8,76
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "dd341b475bfb1932b003d2f91748440c8ead04b7",
+  "prompts": {},
+  "humans": {
+    "h_0a88d9aba8622a": {
+      "author": "Yoan Thirion <yoan.thirion@gmail.com>"
+    }
+  }
+}
